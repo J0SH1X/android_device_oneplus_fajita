@@ -31,7 +31,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Permissions
 PRODUCT_COPY_FILES += \
-    vendor/lineage/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+    $(LOCAL_PATH)/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
@@ -43,8 +43,11 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    lineage.biometrics.fingerprint.inscreen@1.0-service.oneplus
-
+    android.hardware.biometrics.fingerprint@2.3-service.sdm845 \
+    android.hardware.biometrics.fingerprint@2.3.vendor \
+    vendor.oneplus.fingerprint.extension@1.0.vendor \
+     
+     
 # Inherit from oneplus sdm845-common
 $(call inherit-product, device/oneplus/sdm845-common/common.mk)
 

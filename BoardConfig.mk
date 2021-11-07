@@ -22,13 +22,10 @@ DEVICE_PATH := device/oneplus/fajita
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
+
 # FOD
-SOONG_CONFIG_NAMESPACES += ONEPLUS_FOD
-SOONG_CONFIG_ONEPLUS_FOD := POS_X POS_Y SIZE
-SOONG_CONFIG_ONEPLUS_FOD_POS_X := 444
-SOONG_CONFIG_ONEPLUS_FOD_POS_Y := 1966
-SOONG_CONFIG_ONEPLUS_FOD_SIZE := 190
-TARGET_SURFACEFLINGER_FOD_LIB := //hardware/oneplus:libfod_extension.oneplus
+# FOD
+TARGET_SURFACEFLINGER_UDFPS_LIB := //$(DEVICE_PATH):libudfps_extension.sdm845
 
 # inherit from the proprietary version
 -include vendor/oneplus/fajita/BoardConfigVendor.mk
