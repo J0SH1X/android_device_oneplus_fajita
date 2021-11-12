@@ -46,6 +46,7 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.sdm845 \
     android.hardware.biometrics.fingerprint@2.3.vendor \
     vendor.oneplus.fingerprint.extension@1.0.vendor \
+    libudfps_extension.sdm845
      
      
 # Inherit from oneplus sdm845-common
