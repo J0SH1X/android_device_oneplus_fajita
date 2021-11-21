@@ -155,5 +155,9 @@ vendor/lib64/fp_hal_extension.so
 vendor/lib64/libgf_ud_hal.so
 vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1.so
 
+#Sensors
+vendor/lib/sensors.ssc.so
+vendor/lib64/sensors.ssc.so
+
 # Touchscreen
 vendor/etc/firmware/tp/fw_synaptics_18801.img
