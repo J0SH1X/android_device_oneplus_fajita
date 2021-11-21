@@ -29,10 +29,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
-# Permissions
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
-
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
@@ -43,10 +39,10 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.sdm845 \
+    android.hardware.biometrics.fingerprint@2.3-service.oneplus_sdm845 \
     android.hardware.biometrics.fingerprint@2.3.vendor \
     vendor.oneplus.fingerprint.extension@1.0.vendor \
-    libudfps_extension.sdm845
+    libudfps_extension.oneplus_sdm845
      
      
 # Inherit from oneplus sdm845-common
