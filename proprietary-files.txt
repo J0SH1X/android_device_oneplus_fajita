@@ -156,8 +156,10 @@ vendor/lib64/libgf_ud_hal.so
 vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1.so
 
 #Sensors
-vendor/lib/sensors.ssc.so
-vendor/lib64/sensors.ssc.so
+vendor/lib/vendor.qti.hardware.display.mapper@3.0.so
+vendor/lib64/vendor.qti.hardware.display.mapper@3.0.so
+vendor/lib/vendor.qti.hardware.display.mapperextensions@1.0.so
+vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.0.so
 
 # Touchscreen
 vendor/etc/firmware/tp/fw_synaptics_18801.img
