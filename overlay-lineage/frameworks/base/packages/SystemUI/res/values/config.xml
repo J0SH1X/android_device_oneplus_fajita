@@ -23,4 +23,6 @@
     <!-- Max visible notification icons -->
     <integer name="config_maxVisibleNotificationIcons">6</integer>
     <integer name="config_maxVisibleNotificationIconsOnLock">7</integer>
+    <color name="config_udfpsColor">#ff00ff00</color>
+    <integer name="config_udfps_hbm_type">0</integer>
 </resources>
